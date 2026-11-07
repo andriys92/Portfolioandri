@@ -206,7 +206,7 @@ const V = {
       <form onsubmit="doLogin(event)">${field('Email','email','','email','required autocomplete="username"')}${field('Kata sandi','pw','','password','required autocomplete="current-password"')}<p id="lerr" class="text-sm text-rose-600 mb-3 hidden"></p><button class="btn w-full justify-center" type="submit"><i class="fa-solid fa-right-to-bracket"></i>Masuk</button></form>
       ${IS_PREVIEW?`<div class="mt-5 text-xs rounded-2xl bg-amber-50 text-amber-800 p-3"><b>Akun demo</b><br>Email: admin@demo.com<br>Kata sandi: admin123</div>`:''}</div></div>`;
     const T=[['certs','fa-certificate','Sertifikat'],['cats','fa-tags','Kategori'],['profile','fa-id-card','Profil'],['msgs','fa-inbox','Pesan']];
-    return `<div class="flex items-center justify-between mb-5"><h1 class="fd text-3xl font-extrabold">Dashboard admin</h1><button class="btn btn2" onclick="doLogout()"><i class="fa-solid fa-right-from-bracket"></i>Keluar</button></div>
+    return `<div class="flex items-center justify-between mb-5"><div><h1 class="fd text-3xl font-extrabold">Dashboard admin</h1>${S.user.uid?`<p class="text-xs text-slate-500 mt-1 break-all">UID akun Anda (untuk firestore.rules): <b>${e(S.user.uid)}</b></p>`:''}</div><button class="btn btn2" onclick="doLogout()"><i class="fa-solid fa-right-from-bracket"></i>Keluar</button></div>
     <div class="flex gap-2 mb-5">${T.map(t=>`<button onclick="setTab('${t[0]}')" class="px-4 py-2 rounded-full text-sm font-semibold ${S.tab===t[0]?'nav-on':'bg-indigo-50 text-indigo-700'}"><i class="fa-solid ${t[1]} mr-1.5"></i>${t[2]}</button>`).join('')}</div>${A_TAB[S.tab]()}`;
   }
 };
