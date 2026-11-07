@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Portofolio Sertifikat</title>
+<meta name="theme-color" content="#2f5233">
+<meta name="description" content="Portfolio sertifikat dan profil profesional.">
+<meta property="og:title" content="Portfolio"><meta property="og:description" content="Portfolio sertifikat dan profil profesional."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{indigo:{50:'#eef5ee',100:'#dcebdc',200:'#bfd8c1',300:'#93bb97',400:'#5f9566',500:'#3f6b44',600:'#2f5233',700:'#274429',800:'#1f3621',900:'#18281a',950:'#101c12'},violet:{300:'#fcd34d',400:'#fbbf24',500:'#f5a800',600:'#d98e00',700:'#b87300'}}}}}</script>
+<script>
+// PWA: manifest sebagai Data URI
+(function(){var m={name:"Portofolio Sertifikat",short_name:"Portofolio",start_url:".",display:"standalone",background_color:"#ffffff",theme_color:"#2f5233",icons:[{src:"data:image/svg+xml,"+encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='#2f5233'/><circle cx='50' cy='44' r='22' fill='#fff'/><path d='M40 62l-6 24 16-8 16 8-6-24z' fill='#bfd8c1'/></svg>"),sizes:"any",type:"image/svg+xml"}]};
+var l=document.createElement("link");l.rel="manifest";l.href="data:application/manifest+json,"+encodeURIComponent(JSON.stringify(m));document.head.appendChild(l);})();
+</script>
+<style>
+#app{position:fixed;inset:0;overflow:auto;z-index:99999;font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:#1c2b1e;-webkit-overflow-scrolling:touch;
+background:radial-gradient(60rem 30rem at 85% -10%,#fdf1cf,transparent),radial-gradient(40rem 25rem at -10% 45%,#dcebdc99,transparent),#fff}
+#app *{box-sizing:border-box}
+.fd{font-family:Sora,system-ui,sans-serif}
+.glass{background:rgba(255,255,255,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(47,82,51,.15);box-shadow:0 10px 30px -14px rgba(47,82,51,.3)}
+.tilt{transform:perspective(800px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .18s ease-out,box-shadow .2s}
+.tilt:hover{box-shadow:0 24px 40px -16px rgba(47,82,51,.45)}
+.scene{perspective:1000px}
+.stack{transform-style:preserve-3d;transform:rotateX(var(--rx,12deg)) rotateY(var(--ry,-18deg));transition:transform .15s ease-out}
+.layer{position:absolute;inset:0;border-radius:28px;transform:translateZ(var(--z,0px))}
+.orb{position:absolute;width:3.5rem;height:3.5rem;border-radius:9999px;display:grid;place-items:center;color:#fff;font-size:1.3rem;transform:translateZ(var(--z));animation:fl 5s ease-in-out infinite;box-shadow:0 18px 24px -10px rgba(30,27,75,.5),inset -6px -8px 12px rgba(0,0,0,.18),inset 6px 6px 12px rgba(255,255,255,.35)}
+@keyframes fl{50%{translate:0 -14px}}
+.inp{width:100%;border:1px solid #bfd8c1;border-radius:.9rem;padding:.65rem .9rem;background:#fff;outline:none;font-size:.9rem}
+.inp:focus{border-color:#2f5233;box-shadow:0 0 0 3px #2f523333}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.1rem;border-radius:.9rem;font-weight:600;font-size:.9rem;background:linear-gradient(135deg,#2f5233,#3f6b44);color:#fff;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 20px -8px #2f5233}
+.btn2{background:#eef5ee;color:#2f5233}
+.nav-on{background:linear-gradient(135deg,#2f5233,#3f6b44);color:#fff}
+ .bob{animation:fl 5s ease-in-out infinite}
+.spin{animation:sp 14s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+.blob{background:#f5a800;animation:mb 9s ease-in-out infinite}@keyframes mb{50%{border-radius:42% 58% 45% 55%/55% 45% 55% 45%}}
+.ph{background:none}
+.blend{-webkit-mask-image:radial-gradient(ellipse 80% 120% at 50% 20%,#000 65%,transparent 100%);mask-image:radial-gradient(ellipse 80% 120% at 50% 20%,#000 65%,transparent 100%)}
+.acc{background:#fff;border-radius:1.25rem;border:1px solid rgba(47,82,51,.12);transition:background .25s,color .25s}
+.acc.on{background:#1a1712;color:#fff}
+.acc .ab{display:none}.acc.on .ab{display:block}
+.par{transition:transform .2s ease-out}
+.band{background:#1a1712;border-bottom:3px solid #f5a800;overflow:hidden;margin-bottom:3rem}
+.track{display:flex;width:max-content;animation:mq 30s linear infinite;padding:1rem 0;font:800 1.4rem Sora,sans-serif;color:#fff;align-items:center}
+.track i{color:#f5a800;font-size:1.1rem}
+@keyframes mq{to{transform:translateX(-50%)}}
+.hi{position:relative;display:inline-block;padding:.35rem .9rem;border:1px solid #1c2b1e}
+.hi:before,.hi:after{content:"";position:absolute;width:9px;height:9px;background:#f5a800;border:1px solid #1c2b1e}
+.hi:before{left:-5px;top:-5px}.hi:after{right:-5px;bottom:-5px}
+.caret{display:inline-block;width:3px;height:1em;background:#f5a800;margin-left:3px;vertical-align:-.12em;animation:cb 1s steps(1) infinite}@keyframes cb{50%{opacity:0}}
+.p3d{display:inline-block;font-weight:800;font-size:clamp(1.6rem,5vw,2.6rem);letter-spacing:.12em;transform:perspective(700px) rotateX(calc(var(--py,0)*-22deg)) rotateY(calc(var(--px,0)*28deg));transition:transform .2s ease-out;transform-style:preserve-3d}
+.p3d span{display:inline-block;color:#f5a800;animation:wv 2.6s ease-in-out infinite;text-shadow:1px 1px 0 #d98e00,2px 2px 0 #c98200,3px 3px 0 #2f5233,4px 4px 0 #2f5233,5px 5px 0 #2f5233,6px 6px 0 #274429,7px 12px 18px rgba(28,43,30,.35)}
+@keyframes wv{0%,100%{transform:translateY(0) rotateX(0)}50%{transform:translateY(-8px) rotateX(25deg)}}
+:focus-visible{outline:2px solid #2f5233;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="side" class="hidden md:flex fixed left-3 top-3 bottom-3 w-60 p-4 flex-col gap-1.5 z-30 rounded-[1.75rem] text-white overflow-auto" style="background:linear-gradient(180deg,#2c4d31,#1a2e1d);box-shadow:0 24px 40px -20px rgba(28,43,30,.7)"></aside>
+  <nav id="bnav" class="md:hidden fixed left-3 right-3 bottom-3 z-30 rounded-3xl flex justify-around gap-1 p-1.5" style="background:rgba(26,23,18,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 18px 30px -12px rgba(0,0,0,.5);padding-bottom:calc(.375rem + env(safe-area-inset-bottom,0px))"></nav>
+  <main id="view" class="md:ml-[16.5rem] px-4 sm:px-8 pt-6 pb-28 md:pb-10 max-w-6xl mx-auto"></main>
+  <div id="modal" class="hidden fixed inset-0 z-50 bg-indigo-950/50 backdrop-blur-sm overflow-auto p-4" onclick="if(event.target===this)closeModal()"></div>
+  <div id="toast" class="fixed left-1/2 -translate-x-1/2 top-4 z-[60] hidden px-4 py-2 rounded-2xl text-white text-sm shadow-lg"></div>
+</div>
+
+<script type="module">
+// KONFIGURASI APLIKASI
+const IS_PREVIEW = false; // Ubah menjadi false SAAT DEPLOY / PUBLISH agar terhubung murni ke Firebase tanpa data dummy
+
+// PASTE FIREBASE CONFIG ANDA DI SINI
+const firebaseConfig = {
+  apiKey: "AIzaSyA1FKuhWFfr1IrPT2AT2EBZl7-UdLmeMAc",
+  authDomain: "portfolioandrianasuherman.firebaseapp.com",
+  projectId: "portfolioandrianasuherman",
+  storageBucket: "portfolioandrianasuherman.firebasestorage.app",
+  messagingSenderId: "363832387274",
+  appId: "1:363832387274:web:730fb8c9b949c544bdb633"
+};
+
+const $ = s => document.querySelector(s);
+const e = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid = () => Math.random().toString(36).slice(2, 10);
+const S = {view:'home', cats:[], certs:[], profile:null, user:null, q:'', cat:'all', tab:'certs', loading:true, sort:'new', lim:9, msgs:[]};
+let F, A, db, auth;
+
+// Data dummy (hanya dipakai saat IS_PREVIEW = true)
+const mem = IS_PREVIEW ? {
+  profile:{nama:'Raka Pratama',jabatan:'Web Developer',bio:'Pengembang web yang suka membangun antarmuka cepat dan mudah dipakai. Terus belajar lewat kursus dan sertifikasi.',email:'raka@contoh.com',lokasi:'Bekasi, Indonesia',linkedin:'',github:'',instagram:'',fotoUrl:'',keahlian:['JavaScript','UI Design','Cloud','Firebase'],pendidikan:[{institusi:'Universitas Contoh',jurusan:'S1 Teknik Informatika',tahun:'2018 - 2022'},{institusi:'SMA Negeri 1 Bekasi',jurusan:'Ilmu Pengetahuan Alam',tahun:'2015 - 2018'}],pengalaman:[{institusi:'Studio Digital Contoh',jurusan:'Frontend Developer',tahun:'2022 - sekarang'}]},
+  categories:[{id:'c1',nama:'Teknologi',ikon:'fa-code',warna:'#2f5233'},{id:'c2',nama:'Desain',ikon:'fa-palette',warna:'#ec4899'}],
+  certificates:[
+    {id:'s1',judul:'Google Cloud Fundamentals',penerbit:'Google Cloud',kategoriId:'c1',tahunTerbit:2025,deskripsi:'Dasar-dasar layanan cloud, penyimpanan, dan keamanan.',gambarUrl:'',credentialUrl:'',unggulan:true,createdAt:2},
+    {id:'s2',judul:'UI/UX Design Essentials',penerbit:'Dicoding',kategoriId:'c2',tahunTerbit:2024,deskripsi:'Prinsip desain antarmuka, riset pengguna, dan prototipe.',gambarUrl:'',credentialUrl:'',unggulan:true,createdAt:1}],
+  messages:[]
+} : null;
+
+// ---------- Lapisan data ----------
+async function loadAll(){
+  if (IS_PREVIEW){ S.cats=[...mem.categories]; S.certs=[...mem.certificates]; S.profile={...mem.profile}; return; }
+  const get = async c => (await F.getDocs(F.collection(db,c))).docs.map(d=>({id:d.id,...d.data()}));
+  [S.cats,S.certs] = await Promise.all([get('categories'),get('certificates')]);
+  const p = await F.getDoc(F.doc(db,'profile','main'));
+  S.profile = p.exists() ? p.data() : null;
+}
+async function save(col,id,data){
+  if (IS_PREVIEW){
+    if (col==='profile') mem.profile={...mem.profile,...data};
+    else { id=id||uid(); const a=mem[col], i=a.findIndex(x=>x.id===id); i<0 ? a.push({id,...data}) : a[i]={...a[i],...data}; }
+  } else {
+    const ref = col==='profile' ? F.doc(db,'profile','main') : (id ? F.doc(db,col,id) : F.doc(F.collection(db,col)));
+    await F.setDoc(ref,data,{merge:true});
+  }
+  await loadAll();
+}
+async function loadMsgs(){ if(IS_PREVIEW){ S.msgs=[...mem.messages].reverse(); return; } if(!S.user) return;
+  S.msgs=(await F.getDocs(F.query(F.collection(db,'messages'),F.orderBy('createdAt','desc')))).docs.map(d=>({id:d.id,...d.data()})); }
+async function sendMsg(d){ if(IS_PREVIEW) mem.messages.push({id:uid(),...d}); else await F.addDoc(F.collection(db,'messages'),d); }
+async function remove(col,id){
+  if (IS_PREVIEW) mem[col]=mem[col].filter(x=>x.id!==id); else await F.deleteDoc(F.doc(db,col,id));
+  await loadAll();
+}
+async function run(fn,ok){ try{ await fn(); toast(ok); }catch(err){ toast('Gagal: '+(err.message||err),1); } }
+
+// ---------- Util UI ----------
+function toast(m,bad){ const t=$('#toast'); t.textContent=m; t.className='fixed left-1/2 -translate-x-1/2 top-4 z-[60] px-4 py-2 rounded-2xl text-white text-sm shadow-lg '+(bad?'bg-rose-600':'bg-indigo-700'); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.add('hidden'),2800); }
+function modal(h,w='max-w-xl'){ const m=$('#modal'); m.innerHTML=`<div class="glass bg-white rounded-3xl ${w} mx-auto my-6 p-5 sm:p-7 relative" style="background:#fff">${h}</div>`; m.classList.remove('hidden'); }
+function closeModal(){ $('#modal').classList.add('hidden'); if(/^#sertifikat-/.test(location.hash)){ history.replaceState(null,'','#sertifikat'); setTitle(); } }
+const catOf = id => S.cats.find(c=>c.id===id) || {nama:'Umum',ikon:'fa-certificate',warna:'#2f5233'};
+const sorted = () => [...S.certs].sort((a,b)=>(b.tahunTerbit||0)-(a.tahunTerbit||0));
+const empty = (ic,t,s) => `<div class="glass rounded-3xl p-10 text-center"><i class="fa-solid ${ic} text-4xl text-indigo-300 mb-3"></i><p class="fd font-bold text-lg">${t}</p><p class="text-sm text-slate-500 mt-1">${s}</p></div>`;
+const hd=(t,s)=>`<div class="rounded-[2rem] p-6 sm:p-8 mb-6 text-white" style="background:#1a1712;border-top:4px solid #f5a800"><h1 class="fd text-3xl sm:text-4xl font-extrabold">${t}</h1><p class="text-white/60 mt-1 text-sm">${s}</p></div>`;
+const field = (l,n,v='',t='text',x='') => `<label class="block text-sm font-semibold mb-3">${l}<input class="inp mt-1 font-normal" name="${n}" type="${t}" value="${e(v)}" ${x}></label>`;
+
+function card(c){
+  const k=catOf(c.kategoriId);
+  return `<article class="tilt glass rounded-3xl overflow-hidden cursor-pointer" onclick="openCert('${c.id}')" tabindex="0" onkeydown="if(event.key==='Enter')openCert('${c.id}')">
+    <div class="relative h-44 grid place-items-center text-white text-5xl" style="background:linear-gradient(135deg,${e(k.warna)},#f5a800)"><i class="fa-solid ${e(k.ikon)}"></i>
+      ${c.gambarUrl?`<img src="${e(c.gambarUrl)}" alt="${e(c.judul)}" loading="lazy" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">`:''}
+      <span class="absolute left-3 top-3 text-xs font-semibold bg-white/90 text-indigo-900 rounded-full px-3 py-1">${e(k.nama)}</span></div>
+    <div class="p-5"><h3 class="fd font-bold leading-snug">${e(c.judul)}</h3><p class="text-sm text-slate-500 mt-1">${e(c.penerbit)} · ${e(c.tahunTerbit)}</p></div></article>`;
+}
+function openCert(id,fr){
+  if(!fr){ location.hash='sertifikat-'+id; return; }
+  const c=S.certs.find(x=>x.id===id); if(!c){ toast('Sertifikat tidak ditemukan',1); return; } const k=catOf(c.kategoriId); document.title=c.judul+' | Portfolio';
+  modal(`<button class="absolute right-3 top-3 z-20 w-9 h-9 rounded-full bg-white text-indigo-900 shadow-md hover:scale-110 transition" onclick="closeModal()" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
+  <div class="relative h-52 rounded-2xl overflow-hidden grid place-items-center text-white text-6xl mb-4 ${c.gambarUrl?'cursor-zoom-in':''}" style="background:linear-gradient(135deg,${e(k.warna)},#f5a800)" ${c.gambarUrl?`onclick="zoom('${id}')"`:''}><i class="fa-solid ${e(k.ikon)}"></i>${c.gambarUrl?`<img src="${e(c.gambarUrl)}" alt="" class="absolute inset-0 w-full h-full object-contain bg-white" onerror="this.remove()"><span class="absolute right-2 bottom-2 text-xs bg-black/60 text-white rounded-full px-3 py-1"><i class="fa-solid fa-magnifying-glass-plus mr-1"></i>Perbesar</span>`:''}</div>
+  <h2 class="fd text-xl font-bold">${e(c.judul)}</h2>
+  <p class="text-sm text-slate-500 mt-1"><i class="fa-solid fa-building-columns mr-1"></i>${e(c.penerbit)} &nbsp; <i class="fa-regular fa-calendar mr-1"></i>${e(c.tahunTerbit)} &nbsp; <i class="fa-solid ${e(k.ikon)} mr-1"></i>${e(k.nama)}</p>
+  <p class="mt-3 text-sm leading-relaxed">${e(c.deskripsi)||'Belum ada deskripsi.'}</p>
+  <div class="flex flex-wrap gap-2 mt-5">${c.credentialUrl?`<a class="btn" href="${e(c.credentialUrl)}" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Verifikasi</a>`:''}<button class="btn btn2" onclick="shareCert('${id}')"><i class="fa-solid fa-share-nodes"></i>Bagikan</button>${c.gambarUrl?`<a class="btn btn2" href="${e(c.gambarUrl)}" download="${e(c.judul)}"><i class="fa-solid fa-download"></i>Unduh</a>`:''}</div>`);
+}
+
+// ---------- Tampilan ----------
+const V = {
+  home(){
+    const P=S.profile||{}, f=sorted().filter(c=>c.unggulan).slice(0,5), pub=new Set(S.certs.map(c=>c.penerbit)).size, sk=P.keahlian||[];
+    const tg=[...sk,...S.cats.map(c=>c.nama)], b=tg.length?tg:['Sertifikat','Portofolio'], sq=[...b,...b,...b].map(x=>`<span class="mx-7">${e(x)}</span><i class="fa-solid fa-asterisk"></i>`).join('');
+    const ph=P.fotoUrl?`<img src="${e(P.fotoUrl)}" alt="${e(P.nama)}" class="blend w-full h-full object-contain object-bottom" onerror="this.remove()">`:'<i class="fa-solid fa-user text-8xl text-indigo-300"></i>';
+    const chips=sk.slice(0,4).map((x,i)=>`<span class="inline-block m-0.5 rounded-full px-3 py-1 text-xs font-semibold ${i%2?'':'text-white'}" style="${i%2?'background:#f5a800;color:#1c2b1e':'background:#1a1712'}">${e(x)}</span>`).join('');
+    const st=`<b class="fd text-2xl text-violet-500">${S.certs.length}+ Sertifikat</b><p class="text-sm text-slate-600">dari ${pub} penerbit · ${S.cats.length} kategori</p>`;
+    return `<section id="hero" class="relative text-center">
+      <div class="p3d fd" role="img" aria-label="Portfolio">${[...'PORTFOLIO'].map((c,i)=>`<span aria-hidden="true" style="animation-delay:${-i*.18}s">${c}</span>`).join('')}</div>
+      <h1 class="fd text-4xl sm:text-6xl font-extrabold leading-tight mt-4">Saya <span class="text-violet-500">${e(P.nama)||'Portofolio Saya'}</span></h1>
+      <p class="text-slate-600 mt-2 min-h-[1.75rem]"><span id="tw"></span><span class="caret"></span></p>
+      <div class="md:hidden mt-3">${st}</div>
+      <button class="par absolute right-0 -top-2 w-20 h-20 hidden sm:block" onclick="go('contact')" aria-label="Hubungi saya" style="transform:translate(calc(var(--px,0)*20px),calc(var(--py,0)*16px))"><svg viewBox="0 0 100 100" class="spin w-full h-full"><circle cx="50" cy="50" r="49" fill="#1a1712"/><path id="cp" d="M50,50 m-35,0 a35,35 0 1,1 70,0 a35,35 0 1,1 -70,0" fill="none"/><text fill="#fff" font-size="9.5" font-weight="700"><textPath href="#cp" textLength="215" lengthAdjust="spacing">HUBUNGI SAYA • HUBUNGI SAYA •</textPath></text></svg><span class="absolute inset-0 m-auto w-9 h-9 rounded-full grid place-items-center" style="background:#f5a800;color:#1c2b1e"><i class="fa-solid fa-arrow-right text-xs"></i></span></button>
+      <div class="hidden md:block absolute left-0 top-44 text-left w-48 z-10">${st}</div>
+      <div class="hidden md:block absolute right-0 top-40 text-right w-52 z-10"><i class="fa-solid fa-quote-left text-violet-500 text-xl"></i><p class="text-sm text-slate-600 mt-1 mb-3 line-clamp-3">${e(P.bio)||'Profil belum diisi.'}</p>${chips}</div>
+      <div class="relative mx-auto mt-2 h-[24rem] sm:h-[32rem] max-w-xl">
+        <div class="absolute inset-0 grid place-items-center"><div class="blob par w-64 h-64 sm:w-[24rem] sm:h-[24rem]" style="border-radius:58% 42% 55% 45%/50% 55% 45% 50%;transform:translate(calc(var(--px,0)*-22px),calc(var(--py,0)*-18px))"></div></div>
+        <div class="par absolute inset-0 flex justify-center" style="transform:translate(calc(var(--px,0)*14px),calc(var(--py,0)*10px))"><div class="ph bob h-full w-72 sm:w-[28rem] grid place-items-center">${ph}</div></div>
+        <div class="absolute bottom-3 left-0 right-0 flex justify-center z-10"><div class="glass rounded-full p-1.5 flex gap-1.5"><button class="btn pl-5 pr-1.5 py-1.5" onclick="go('certs')" style="background:#f5a800;color:#1c2b1e">Sertifikat<span class="w-8 h-8 rounded-full grid place-items-center text-white" style="background:#1a1712"><i class="fa-solid fa-arrow-right text-xs"></i></span></button><button class="btn" style="background:#fff;color:#1c2b1e" onclick="go('contact')">Hubungi saya</button></div></div></div></section>
+      <div class="band -mx-4 sm:-mx-8" aria-hidden="true"><div class="track">${sq}${sq}</div></div>
+      <section><div class="flex items-center justify-between mb-5"><h2 class="fd text-2xl sm:text-3xl font-bold">Sertifikat <i class="text-violet-500 font-semibold">unggulan</i></h2><button class="btn btn2" onclick="go('certs')">Lihat semua</button></div>
+      ${f.length?`<div class="grid gap-3">${f.map((c,i)=>{const k=catOf(c.kategoriId),ch=x=>`<span class="rounded-full border border-white/25 px-3 py-1 text-xs">${e(x)}</span>`;return `<div class="acc ${i?'':'on'}"><button class="w-full flex items-center gap-4 p-4 sm:p-5 text-left" onclick="acc(this)"><span class="text-xs font-semibold rounded-full border border-violet-300 text-violet-600 px-2.5 py-0.5">0${i+1}</span><b class="fd flex-1 text-base sm:text-lg">${e(c.judul)}</b><span class="w-9 h-9 rounded-full grid place-items-center shrink-0" style="background:#f5a800;color:#1c2b1e"><i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></span></button><div class="ab px-5 pb-5 sm:pl-[4.5rem]"><div class="flex flex-wrap gap-2 mb-3">${ch(k.nama)}${ch(c.penerbit)}${ch(c.tahunTerbit)}</div><p class="text-sm text-white/70">${e(c.deskripsi)||'Belum ada deskripsi.'}</p><button class="btn mt-4" onclick="openCert('${c.id}')">Lihat detail</button></div></div>`}).join('')}</div>`:empty('fa-award','Belum ada sertifikat unggulan','Sertifikat yang ditandai unggulan oleh admin tampil di sini.')}</section>`;
+  },
+  certs(){
+    return `${hd('Sertifikat <i class="font-semibold" style="color:#f5a800">saya</i>',S.certs.length+' sertifikat')}
+    <div class="relative mb-4"><i class="fa-solid fa-magnifying-glass absolute left-4 top-3.5 text-indigo-300"></i><input class="inp pl-11" placeholder="Cari judul atau penerbit" value="${e(S.q)}" oninput="S.q=this.value;S.lim=9;drawGrid()"></div><div class="flex justify-end mb-3"><select class="inp w-auto text-sm" aria-label="Urutkan" onchange="S.sort=this.value;S.lim=9;drawGrid()">${[['new','Terbaru'],['old','Terlama'],['az','Judul A-Z']].map(o=>`<option value="${o[0]}" ${S.sort===o[0]?'selected':''}>${o[1]}</option>`).join('')}</select></div>
+    <div class="flex gap-2 overflow-x-auto pb-3 mb-3">${[{id:'all',nama:'Semua',ikon:'fa-layer-group'},...S.cats].map(c=>`<button onclick="S.cat='${c.id}';S.lim=9;render()" class="whitespace-nowrap px-4 py-2 rounded-full text-sm font-semibold ${S.cat===c.id?'nav-on':'bg-indigo-50 text-indigo-700'}"><i class="fa-solid ${e(c.ikon)} mr-1.5"></i>${e(c.nama)}</button>`).join('')}</div>
+    <div id="grid" class="grid sm:grid-cols-2 xl:grid-cols-3 gap-5"></div>`;
+  },
+  about(){
+    const P=S.profile||{}; if(!S.profile) return empty('fa-user','Profil belum diisi','Admin dapat mengisi profil dari menu Admin.');
+    const cp='clip-path:polygon(0 0,86% 0,100% 11%,100% 100%,0 100%)', rot=[-6,4,-3,6,-5];
+    return `<h1 class="fd text-3xl font-extrabold mb-5">Tentang</h1><div class="rounded-[2rem] p-6 sm:p-10 grid md:grid-cols-[auto_1fr] gap-10 items-center text-white" style="background:#1a1712;border-top:4px solid #f5a800">
+      <div class="mx-auto relative w-60 h-72 sm:w-64 sm:h-80 mb-6 md:mb-0"><div class="absolute inset-0" style="background:#f5a800;${cp}"></div><div class="absolute inset-0 overflow-hidden grid place-items-center text-6xl text-black/30" style="${cp}">${P.fotoUrl?`<img src="${e(P.fotoUrl)}" alt="${e(P.nama)}" class="w-full h-full object-cover object-top" onerror="this.remove()">`:'<i class="fa-solid fa-user"></i>'}</div>
+        <div class="absolute -bottom-4 left-0 right-0 flex flex-wrap justify-center gap-1 z-10">${(P.keahlian||[]).slice(0,5).map((x,i)=>`<span class="bob px-3 py-1 rounded-full text-xs font-bold ${i%2?'':'text-white'}" style="animation-delay:${-i*.8}s;rotate:${rot[i%5]}deg;${i%2?'background:#f5a800;color:#1a1712;border:2px solid #1a1712':'background:#1a1712;border:2px solid #f5a800'}">${e(x)}</span>`).join('')}</div></div>
+      <div><h2 class="fd text-3xl font-bold">Siapa <i class="font-semibold" style="color:#f5a800">${e(P.nama)}</i>?</h2><p class="font-semibold mt-1" style="color:#fcd34d">${e(P.jabatan)}</p><p class="text-sm text-white/60 mt-1"><i class="fa-solid fa-location-dot mr-1"></i>${e(P.lokasi)}</p>
+      <p class="mt-4 leading-relaxed text-white/85 max-w-lg">${e(P.bio)}</p>
+      <button class="btn mt-6 pl-5 pr-1.5 py-1.5" style="background:#f5a800;color:#1a1712" onclick="go('contact')">Hubungi saya<span class="w-9 h-9 rounded-full grid place-items-center text-white" style="background:#1a1712"><i class="fa-solid fa-arrow-right"></i></span></button>${P.cvUrl?`<a class="btn btn2 mt-6 ml-2" href="${e(P.cvUrl)}" target="_blank" rel="noopener"><i class="fa-solid fa-download"></i>Unduh CV</a>`:''}</div></div>${tl('Riwayat','pendidikan',P.pendidikan,'fa-graduation-cap')}${tl('Pengalaman','kerja',P.pengalaman,'fa-briefcase')}`;
+  },
+  contact(){
+    const P=S.profile||{}, L=[['fa-envelope','Email',P.email,P.email&&'mailto:'+P.email],['fa-linkedin','LinkedIn',P.linkedin,P.linkedin],['fa-github','GitHub',P.github,P.github],['fa-instagram','Instagram',P.instagram,P.instagram]].filter(x=>x[2]);
+    return `${hd('Hubungi <i class="font-semibold" style="color:#f5a800">saya</i>','Kirim pesan atau temukan saya di media sosial.')}<div class="grid lg:grid-cols-2 gap-6"><div class="grid gap-4 content-start">${L.length?L.map(x=>`<a class="tilt glass rounded-3xl p-5 flex items-center gap-4" href="${e(x[3])}" target="_blank" rel="noopener"><span class="w-12 h-12 rounded-2xl grid place-items-center text-white text-xl" style="background:linear-gradient(135deg,#2f5233,#3f6b44)"><i class="${x[0]==='fa-envelope'?'fa-solid':'fa-brands'} ${x[0]}"></i></span><span class="min-w-0"><b class="fd block">${x[1]}</b><span class="text-sm text-slate-500 truncate block">${e(x[2])}</span></span></a>`).join(''):empty('fa-envelope','Kontak belum tersedia','Admin dapat menambahkan email dan media sosial.')}</div>
+    <form class="glass rounded-3xl p-6" onsubmit="sendMsgForm(event)"><h2 class="fd font-bold text-xl mb-4">Kirim pesan</h2>${field('Nama','nama','','text','required maxlength="100"')}${field('Email','email','','email','required maxlength="150"')}<label class="block text-sm font-semibold mb-3">Pesan<textarea class="inp mt-1 font-normal" name="pesan" rows="4" required maxlength="2000"></textarea></label><input name="website" class="hidden" tabindex="-1" autocomplete="off"><button class="btn" type="submit"><i class="fa-solid fa-paper-plane"></i>Kirim</button></form></div>`;
+  },
+  admin(){
+    if(!S.user) return `<div class="max-w-md mx-auto mt-10"><div class="glass rounded-3xl p-7"><div class="w-14 h-14 rounded-2xl grid place-items-center text-white text-2xl mb-4" style="background:linear-gradient(135deg,#2f5233,#3f6b44)"><i class="fa-solid fa-lock"></i></div>
+      <h1 class="fd text-2xl font-extrabold mb-1">Masuk sebagai admin</h1><p class="text-sm text-slate-500 mb-5">Hanya admin yang dapat mengelola sertifikat.</p>
+      <form onsubmit="doLogin(event)">${field('Email','email','','email','required autocomplete="username"')}${field('Kata sandi','pw','','password','required autocomplete="current-password"')}<p id="lerr" class="text-sm text-rose-600 mb-3 hidden"></p><button class="btn w-full justify-center" type="submit"><i class="fa-solid fa-right-to-bracket"></i>Masuk</button></form>
+      ${IS_PREVIEW?`<div class="mt-5 text-xs rounded-2xl bg-amber-50 text-amber-800 p-3"><b>Akun demo</b><br>Email: admin@demo.com<br>Kata sandi: admin123</div>`:''}</div></div>`;
+    const T=[['certs','fa-certificate','Sertifikat'],['cats','fa-tags','Kategori'],['profile','fa-id-card','Profil'],['msgs','fa-inbox','Pesan']];
+    return `<div class="flex items-center justify-between mb-5"><h1 class="fd text-3xl font-extrabold">Dashboard admin</h1><button class="btn btn2" onclick="doLogout()"><i class="fa-solid fa-right-from-bracket"></i>Keluar</button></div>
+    <div class="flex gap-2 mb-5">${T.map(t=>`<button onclick="setTab('${t[0]}')" class="px-4 py-2 rounded-full text-sm font-semibold ${S.tab===t[0]?'nav-on':'bg-indigo-50 text-indigo-700'}"><i class="fa-solid ${t[1]} mr-1.5"></i>${t[2]}</button>`).join('')}</div>${A_TAB[S.tab]()}`;
+  }
+};
+const row = (t,s,ic,col,edit,del) => `<div class="glass rounded-2xl p-3 flex items-center gap-3"><span class="w-11 h-11 rounded-xl grid place-items-center text-white shrink-0" style="background:${e(col)}"><i class="fa-solid ${e(ic)}"></i></span><div class="min-w-0 flex-1"><b class="block truncate">${e(t)}</b><span class="text-xs text-slate-500 truncate block">${e(s)}</span></div><button class="w-9 h-9 rounded-xl bg-indigo-50 text-indigo-700" onclick="${edit}" aria-label="Ubah"><i class="fa-solid fa-pen"></i></button><button class="w-9 h-9 rounded-xl bg-rose-50 text-rose-600" onclick="${del}" aria-label="Hapus"><i class="fa-solid fa-trash"></i></button></div>`;
+const A_TAB = {
+  msgs:()=>`<div class="grid gap-3">${S.msgs.length?S.msgs.map(m=>`<div class="glass rounded-2xl p-4"><div class="flex justify-between gap-2"><b>${e(m.nama)}</b><button class="text-rose-600" onclick="del('messages','${m.id}')" aria-label="Hapus"><i class="fa-solid fa-trash"></i></button></div><a class="text-sm text-indigo-600" href="mailto:${e(m.email)}">${e(m.email)}</a><p class="text-sm mt-2 whitespace-pre-line">${e(m.pesan)}</p><p class="text-xs text-slate-400 mt-2">${new Date(m.createdAt).toLocaleString('id-ID')}</p></div>`).join(''):empty('fa-inbox','Belum ada pesan','Pesan dari formulir Kontak muncul di sini.')}</div>`,
+  certs:()=>`<button class="btn mb-4" onclick="certForm()"><i class="fa-solid fa-plus"></i>Tambah sertifikat</button><div class="grid gap-3">${S.certs.length?sorted().map(c=>{const k=catOf(c.kategoriId);return row(c.judul,c.penerbit+' · '+c.tahunTerbit+(c.unggulan?' · Unggulan':''),k.ikon,k.warna,`certForm('${c.id}')`,`del('certificates','${c.id}')`)}).join(''):empty('fa-certificate','Belum ada data','Tambahkan sertifikat pertama Anda.')}</div>`,
+  cats:()=>`<button class="btn mb-4" onclick="catForm()"><i class="fa-solid fa-plus"></i>Tambah kategori</button><div class="grid gap-3">${S.cats.length?S.cats.map(c=>row(c.nama,c.ikon,c.ikon,c.warna,`catForm('${c.id}')`,`del('categories','${c.id}')`)).join(''):empty('fa-tags','Belum ada kategori','Buat kategori untuk mengelompokkan sertifikat.')}</div>`,
+  profile:()=>{const P=S.profile||{};return `<form class="glass rounded-3xl p-6 grid sm:grid-cols-2 gap-x-4" onsubmit="saveProfile(event)">${field('Nama','nama',P.nama)}${field('Jabatan','jabatan',P.jabatan)}${field('Email','email',P.email,'email')}${field('Lokasi','lokasi',P.lokasi)}<div class="sm:col-span-2 mb-3 flex items-center gap-4"><div id="fprev" class="w-20 h-20 rounded-2xl bg-indigo-50 overflow-hidden grid place-items-center text-indigo-300 text-2xl shrink-0">${P.fotoUrl?`<img src="${e(P.fotoUrl)}" alt="" class="w-full h-full object-cover">`:'<i class="fa-solid fa-user"></i>'}</div><label class="text-sm font-semibold">Foto profil (unggah dari perangkat)<input type="file" accept="image/*" class="block mt-1 text-sm font-normal" onchange="pickPhoto(this)"></label><input type="hidden" name="fotoUrl" value="${e(P.fotoUrl)}"></div>${field('Keahlian (pisahkan koma)','keahlian',(P.keahlian||[]).join(', '))}${field('LinkedIn (URL)','linkedin',P.linkedin,'url')}${field('GitHub (URL)','github',P.github,'url')}${field('Instagram (URL)','instagram',P.instagram,'url')}<label class="block text-sm font-semibold mb-3 sm:col-span-2">Bio<textarea class="inp mt-1 font-normal" name="bio" rows="4">${e(P.bio)}</textarea></label>${field('URL CV (PDF)','cvUrl',P.cvUrl,'url')}<label class="block text-sm font-semibold mb-3 sm:col-span-2">Pengalaman kerja<span class="block text-xs font-normal text-slate-500">Satu baris per entri: Perusahaan | Posisi | Tahun</span><textarea class="inp mt-1 font-normal" name="pengalaman" rows="3">${e((P.pengalaman||[]).map(x=>[x.institusi,x.jurusan,x.tahun].join(' | ')).join('\n'))}</textarea></label><label class="block text-sm font-semibold mb-3 sm:col-span-2">Riwayat pendidikan<span class="block text-xs font-normal text-slate-500">Satu baris per entri, format: Institusi | Jurusan | Tahun</span><textarea class="inp mt-1 font-normal" name="pendidikan" rows="4" placeholder="Universitas Contoh | S1 Teknik Informatika | 2018 - 2022">${e((P.pendidikan||[]).map(x=>[x.institusi,x.jurusan,x.tahun].join(' | ')).join('\n'))}</textarea></label><div class="sm:col-span-2"><button class="btn" type="submit"><i class="fa-solid fa-floppy-disk"></i>Simpan profil</button></div></form>`;}
+};
+
+// ---------- Aksi ----------
+function certForm(id){
+  const c=S.certs.find(x=>x.id===id)||{};
+  modal(`<h2 class="fd text-xl font-bold mb-4">${id?'Ubah':'Tambah'} sertifikat</h2><form onsubmit="saveCert(event,'${id||''}')">${field('Judul','judul',c.judul,'text','required')}${field('Penerbit','penerbit',c.penerbit,'text','required')}
+  <label class="block text-sm font-semibold mb-3">Kategori<select class="inp mt-1 font-normal" name="kategoriId">${S.cats.map(k=>`<option value="${k.id}" ${k.id===c.kategoriId?'selected':''}>${e(k.nama)}</option>`).join('')||'<option value="">Umum</option>'}</select></label>
+  ${field('Tahun terbit','tahunTerbit',c.tahunTerbit||new Date().getFullYear(),'number','required min="1990" max="2100"')}<div class="mb-3 flex items-center gap-4"><div id="gprev" class="w-24 h-16 rounded-xl bg-indigo-50 overflow-hidden grid place-items-center text-indigo-300 shrink-0">${c.gambarUrl?`<img src="${e(c.gambarUrl)}" alt="" class="w-full h-full object-cover">`:'<i class="fa-solid fa-image"></i>'}</div><label class="text-sm font-semibold">Gambar sertifikat (unggah)<input type="file" accept="image/*" class="block mt-1 text-sm font-normal" onchange="pickPhoto(this,'gambarUrl','gprev',1100)"></label><input type="hidden" name="gambarUrl" value="${e(c.gambarUrl)}"></div>${field('URL verifikasi','credentialUrl',c.credentialUrl,'url')}
+  <label class="block text-sm font-semibold mb-3">Deskripsi<textarea class="inp mt-1 font-normal" name="deskripsi" rows="3">${e(c.deskripsi)}</textarea></label>
+  <label class="flex items-center gap-2 text-sm font-semibold mb-5"><input type="checkbox" name="unggulan" ${c.unggulan?'checked':''}>Tampilkan sebagai unggulan</label>
+  <div class="flex gap-2"><button class="btn" type="submit"><i class="fa-solid fa-floppy-disk"></i>Simpan</button><button class="btn btn2" type="button" onclick="closeModal()">Batal</button></div></form>`);
+}
+async function saveCert(ev,id){ ev.preventDefault(); const f=new FormData(ev.target);
+  const d={judul:f.get('judul').trim(),penerbit:f.get('penerbit').trim(),kategoriId:f.get('kategoriId'),tahunTerbit:+f.get('tahunTerbit'),gambarUrl:f.get('gambarUrl').trim(),credentialUrl:f.get('credentialUrl').trim(),deskripsi:f.get('deskripsi').trim(),unggulan:!!f.get('unggulan')};
+  if(!id) d.createdAt=Date.now(); await run(()=>save('certificates',id||null,d),'Sertifikat disimpan'); closeModal(); render(); }
+function catForm(id){
+  const c=S.cats.find(x=>x.id===id)||{ikon:'fa-certificate',warna:'#2f5233'};
+  modal(`<h2 class="fd text-xl font-bold mb-4">${id?'Ubah':'Tambah'} kategori</h2><form onsubmit="saveCat(event,'${id||''}')">${field('Nama','nama',c.nama,'text','required')}${field('Ikon FontAwesome (contoh: fa-code)','ikon',c.ikon,'text','required')}${field('Warna','warna',c.warna,'color')}<div class="flex gap-2"><button class="btn" type="submit"><i class="fa-solid fa-floppy-disk"></i>Simpan</button><button class="btn btn2" type="button" onclick="closeModal()">Batal</button></div></form>`);
+}
+async function saveCat(ev,id){ ev.preventDefault(); const f=new FormData(ev.target);
+  await run(()=>save('categories',id||null,{nama:f.get('nama').trim(),ikon:f.get('ikon').trim(),warna:f.get('warna')}),'Kategori disimpan'); closeModal(); render(); }
+async function saveProfile(ev){ ev.preventDefault(); const f=new FormData(ev.target), d={};
+  ['nama','jabatan','email','lokasi','fotoUrl','linkedin','github','instagram','cvUrl','bio'].forEach(k=>d[k]=f.get(k).trim());
+  d.keahlian=f.get('keahlian').split(',').map(x=>x.trim()).filter(Boolean);
+  const pl=k=>f.get(k).split('\n').map(l=>l.split('|').map(s=>s.trim())).filter(a=>a[0]).map(a=>({institusi:a[0],jurusan:a[1]||'',tahun:a[2]||''})); d.pendidikan=pl('pendidikan'); d.pengalaman=pl('pengalaman');
+  await run(()=>save('profile',null,d),'Profil disimpan'); render(); }
+function pickPhoto(inp,nm='fotoUrl',pv='fprev',mx=640){ const fl=inp.files[0]; if(!fl) return; const im=new Image(), u=URL.createObjectURL(fl);
+  im.onload=()=>{ const k=Math.min(1,mx/Math.max(im.width,im.height)), c=document.createElement('canvas'); c.width=im.width*k; c.height=im.height*k; c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+    let d=c.toDataURL('image/webp',.85); if(!d.startsWith('data:image/webp')) d=c.toDataURL('image/png'); inp.form[nm].value=d; $('#'+pv).innerHTML=`<img src="${d}" alt="" class="w-full h-full object-cover">`; URL.revokeObjectURL(u); };
+  im.onerror=()=>toast('Foto tidak dapat dibaca',1); im.src=u; }
+function acc(b){const r=b.closest('.acc'),on=r.classList.contains('on');document.querySelectorAll('.acc').forEach(x=>x.classList.remove('on'));if(!on)r.classList.add('on');}
+let twT=0;
+function startTW(){ const el=$('#tw'), id=++twT; if(!el) return; const P=S.profile||{}, w=[P.jabatan,...(P.keahlian||[])].filter(Boolean);
+  if(!w.length){ el.textContent='Portofolio Sertifikat'; return; } if(matchMedia('(prefers-reduced-motion:reduce)').matches){ el.textContent=w[0]; return; }
+  let i=0,j=0,dl=false; (function tick(){ if(id!==twT||!document.body.contains(el)) return; const s=w[i]; j+=dl?-1:1; el.textContent=s.slice(0,j); let d=dl?40:90;
+    if(!dl&&j===s.length){dl=true;d=1400;} else if(dl&&j===0){dl=false;i=(i+1)%w.length;d=300;} setTimeout(tick,d); })(); }
+async function del(col,id){ let msg='Hapus data ini?';
+  if(col==='categories'){ const n=S.certs.filter(c=>c.kategoriId===id).length; if(n) msg=`${n} sertifikat memakai kategori ini dan akan menjadi "Umum". Lanjutkan?`; }
+  if(!confirm(msg)) return;
+  await run(async()=>{ if(col==='categories') for(const c of S.certs.filter(c=>c.kategoriId===id)) await save('certificates',c.id,{kategoriId:''}); await remove(col,id); if(col==='messages') await loadMsgs(); },'Data dihapus'); render(); }
+async function setTab(x){ S.tab=x; render(); if(x==='msgs'){ try{ await loadMsgs(); }catch(err){ toast('Gagal memuat pesan: '+err.message,1); } render(); } }
+async function sendMsgForm(ev){ ev.preventDefault(); const f=new FormData(ev.target); if(f.get('website')) return;
+  const d={nama:f.get('nama').trim().slice(0,100),email:f.get('email').trim().slice(0,150),pesan:f.get('pesan').trim().slice(0,2000),createdAt:Date.now()};
+  await run(()=>sendMsg(d),'Pesan terkirim, terima kasih!'); ev.target.reset(); }
+function zoom(id){ const c=S.certs.find(x=>x.id===id); if(!c||!c.gambarUrl) return;
+  modal(`<button class="absolute right-3 top-3 z-20 w-9 h-9 rounded-full bg-white text-indigo-900 shadow-md" onclick="closeModal()" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button><img src="${e(c.gambarUrl)}" alt="${e(c.judul)}" class="w-full rounded-xl"><div class="flex gap-2 mt-4"><a class="btn" href="${e(c.gambarUrl)}" download="${e(c.judul)}"><i class="fa-solid fa-download"></i>Unduh</a><button class="btn btn2" onclick="openCert('${id}',1)">Kembali</button></div>`,'max-w-4xl'); }
+async function shareCert(id){ const u=location.href.split('#')[0]+'#sertifikat-'+id;
+  try{ if(navigator.share){ await navigator.share({title:document.title,url:u}); return; } await navigator.clipboard.writeText(u); toast('Tautan disalin'); }catch{ toast('Tautan: '+u); } }
+const yr=s=>+((String(s).match(/\d{4}/g)||[0]).pop());
+const tl=(a,b,arr,ic)=>{ arr=[...(arr||[])].sort((x,y)=>yr(y.tahun)-yr(x.tahun)); return arr.length?`<section class="mt-10"><h2 class="fd text-2xl sm:text-3xl font-bold mb-5">${a} <i class="text-violet-500 font-semibold">${b}</i></h2><ol class="relative border-l-2 ml-3" style="border-color:#f5a800">${arr.map(x=>`<li class="mb-5 ml-8 relative"><span class="absolute -left-[3.05rem] top-3 w-8 h-8 rounded-full grid place-items-center text-sm" style="background:#f5a800;color:#1a1712"><i class="fa-solid ${ic}"></i></span><div class="glass rounded-2xl p-4"><div class="flex flex-wrap items-center justify-between gap-2"><b class="fd">${e(x.institusi)}</b>${x.tahun?`<span class="text-xs font-semibold rounded-full px-3 py-1" style="background:#fdf1cf;color:#1a1712">${e(x.tahun)}</span>`:''}</div><p class="text-sm text-slate-600 mt-1">${e(x.jurusan)}</p></div></li>`).join('')}</ol></section>`:''; };
+const KEY={home:'beranda',about:'tentang',certs:'sertifikat',contact:'kontak',admin:'admin'}, TT={home:'Beranda',about:'Tentang',certs:'Sertifikat',contact:'Kontak',admin:'Admin'};
+const setTitle=()=>{ document.title=TT[S.view]+' | '+((S.profile&&S.profile.nama)||'Portfolio'); };
+function route(){ if(S.loading) return; const h=location.hash.slice(1), m=h.match(/^sertifikat-([A-Za-z0-9]+)$/), v=Object.keys(KEY).find(k=>KEY[k]===h);
+  if(m){ S.view='certs'; render(); openCert(m[1],1); return; }
+  $('#modal').classList.add('hidden'); if(v) S.view=v; render(); }
+async function doLogin(ev){ ev.preventDefault(); const f=new FormData(ev.target), em=f.get('email').trim(), pw=f.get('pw'), er=$('#lerr');
+  try{
+    if(IS_PREVIEW){ if(em==='admin@demo.com'&&pw==='admin123') S.user={email:em}; else throw 0; }
+    else await A.signInWithEmailAndPassword(auth,em,pw);
+    toast('Berhasil masuk'); renderAll();
+  }catch{ er.textContent='Email atau kata sandi salah.'; er.classList.remove('hidden'); } }
+async function doLogout(){ if(!IS_PREVIEW) await A.signOut(auth); S.user=null; renderAll(); }
+function go(v){ if(location.hash==='#'+KEY[v]){ S.view=v; render(); } else location.hash=KEY[v]; }
+function drawGrid(){
+  const g=$('#grid'); if(!g) return; const q=S.q.toLowerCase();
+  let l=sorted().filter(c=>(S.cat==='all'||c.kategoriId===S.cat)&&(c.judul+' '+c.penerbit).toLowerCase().includes(q));
+  if(S.sort==='old') l.reverse(); if(S.sort==='az') l.sort((a,b)=>a.judul.localeCompare(b.judul));
+  const more=l.length>S.lim; l=l.slice(0,S.lim);
+  g.innerHTML=l.length?l.map(card).join('')+(more?`<div class="col-span-full text-center"><button class="btn btn2" onclick="S.lim+=9;drawGrid()">Muat lebih banyak</button></div>`:''):`<div class="col-span-full">${empty('fa-box-open',S.certs.length?'Tidak ada hasil':'Belum ada sertifikat',S.certs.length?'Coba kata kunci atau kategori lain.':'Admin dapat menambahkan sertifikat dari menu Admin.')}</div>`;
+}
+
+// ---------- Render ----------
+const NAV=[['home','fa-house','Beranda'],['about','fa-user','Tentang'],['certs','fa-certificate','Sertifikat'],['contact','fa-envelope','Kontak'],['admin','fa-lock','Admin']];
+function renderNav(){
+  const P=S.profile||{}, on=v=>S.view===v;
+  const av=P.fotoUrl?`<img src="${e(P.fotoUrl)}" alt="" class="w-full h-full object-cover object-top">`:'<i class="fa-solid fa-user"></i>';
+  $('#side').innerHTML=`<div class="rounded-2xl p-3 flex items-center gap-3 mb-3" style="background:rgba(255,255,255,.1)"><span class="w-12 h-12 rounded-full grid place-items-center overflow-hidden shrink-0 text-white/80" style="box-shadow:0 0 0 2px #f5a800;background:#3f6b44">${av}</span><div class="min-w-0"><b class="fd block text-sm truncate">${e(P.nama)||'Portofolio'}</b><span class="text-xs truncate block" style="color:#fcd34d">${e(P.jabatan)||'Sertifikat'}</span></div></div>
+    <p class="text-[10px] tracking-widest text-white/40 px-3 mb-1 font-semibold">MENU</p>`+
+    NAV.map(n=>{const o=on(n[0]),ic=n[0]==='admin'&&S.user?'fa-gauge':n[1];
+      return `<button onclick="go('${n[0]}')" class="group flex items-center gap-3 px-2 py-2 rounded-2xl text-sm font-semibold text-left transition-all duration-200 ${o?'':'text-white/75 hover:bg-white/10 hover:translate-x-1'}" style="${o?'background:#f5a800;color:#1a1712;box-shadow:0 10px 20px -10px #f5a800':''}"><span class="w-9 h-9 rounded-xl grid place-items-center transition ${o?'bg-white/40':'bg-white/10 group-hover:bg-white/20'}"><i class="fa-solid ${ic}"></i></span><span class="flex-1">${n[2]}</span>${o?'<i class="fa-solid fa-circle text-[6px]"></i>':''}</button>`}).join('')+
+    `<div class="mt-auto pt-3">${S.user?'<p class="text-xs text-white/60 px-2 mb-2"><i class="fa-solid fa-circle text-[7px] text-emerald-400 mr-1.5"></i>Admin aktif</p>':''}<button onclick="go('contact')" class="w-full rounded-2xl p-4 text-left transition hover:-translate-y-0.5" style="background:linear-gradient(135deg,#f5a800,#fcd34d);color:#1a1712"><i class="fa-solid fa-paper-plane"></i><b class="fd block mt-1.5">Ayo terhubung</b><span class="text-xs opacity-80">Hubungi saya sekarang</span></button>`+
+    (IS_PREVIEW?`<div class="mt-3 text-[11px] rounded-xl p-2.5 text-center" style="background:rgba(252,211,77,.15);color:#fcd34d"><i class="fa-solid fa-flask mr-1"></i>Mode Preview: data hanya di memori</div>`:'')+`</div>`;
+  $('#bnav').innerHTML=NAV.map(n=>{const o=on(n[0]),ic=n[0]==='admin'&&S.user?'fa-gauge':n[1];
+    return `<button onclick="go('${n[0]}')" aria-label="${n[2]}" class="flex-1 flex flex-col items-center gap-0.5 py-2 rounded-2xl text-[11px] font-semibold transition-all ${o?'':'text-white/70'}" style="${o?'background:#f5a800;color:#1a1712':''}"><i class="fa-solid ${ic} text-base"></i>${n[2]}</button>`}).join('');
+}
+function render(){
+  renderNav();
+  $('#view').innerHTML=S.loading?'<div class="grid place-items-center h-[60vh] text-indigo-500 text-3xl"><i class="fa-solid fa-circle-notch fa-spin"></i></div>':(IS_PREVIEW?'<div class="md:hidden mb-4 text-xs rounded-2xl bg-amber-50 text-amber-800 p-2.5 text-center"><i class="fa-solid fa-flask mr-1"></i>Mode Preview: data hanya di memori.</div>':'')+V[S.view]();
+  if(!S.loading&&S.view==='certs') drawGrid();
+  setTitle();
+  S.view==='home'&&!S.loading?startTW():twT++;
+  $('#app').scrollTo({top:0});
+}
+const renderAll=render;
+Object.assign(window,{S,go,render,drawGrid,openCert,closeModal,acc,pickPhoto,zoom,shareCert,setTab,sendMsgForm,certForm,saveCert,catForm,saveCat,saveProfile,del,doLogin,doLogout});
+
+// Efek gerak mengikuti pointer
+document.addEventListener('pointermove',ev=>{
+  const h=ev.target.closest&&ev.target.closest('#hero');
+  if(h){ const r=h.getBoundingClientRect(); h.style.setProperty('--px',((ev.clientX-r.left)/r.width-.5).toFixed(3)); h.style.setProperty('--py',((ev.clientY-r.top)/r.height-.5).toFixed(3)); }
+  const t=ev.target.closest&&ev.target.closest('.tilt'); if(!t) return;
+  const r=t.getBoundingClientRect(); t.style.setProperty('--ry',((ev.clientX-r.left)/r.width-.5)*12+'deg'); t.style.setProperty('--rx',-((ev.clientY-r.top)/r.height-.5)*12+'deg');
+});
+document.addEventListener('pointerleave',ev=>{
+  const t=ev.target; if(!t.matches) return;
+  if(t.matches('#hero')){ t.style.removeProperty('--px'); t.style.removeProperty('--py'); }
+  else if(t.matches('.tilt')){ t.style.removeProperty('--ry'); t.style.removeProperty('--rx'); }
+},true);
+
+// PWA: daftarkan sw.js (taruh di folder yang sama dengan halaman ini)
+try{ if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js').catch(()=>{}); }catch{}
+
+// ---------- Mulai ----------
+window.addEventListener('hashchange',route);
+(async()=>{
+  render();
+  try{
+    if(!IS_PREVIEW){
+      const b='https://www.gstatic.com/firebasejs/10.12.2/';
+      const [m,fs,au]=await Promise.all([import(b+'firebase-app.js'),import(b+'firebase-firestore.js'),import(b+'firebase-auth.js')]);
+      F=fs; A=au; const app=m.initializeApp(firebaseConfig); db=F.getFirestore(app); auth=A.getAuth(app);
+      A.onAuthStateChanged(auth,u=>{S.user=u; render();});
+    }
+    await loadAll();
+  }catch(err){ toast('Gagal memuat data: '+(err.message||err),1); }
+  S.loading=false; route();
+})();
+</script>
+</body>
+</html>
